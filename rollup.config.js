@@ -3,6 +3,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
 import typescript from '@rollup/plugin-typescript';
+import postcss from 'rollup-plugin-postcss';
 
 const packageJson = require('./package.json');
 
@@ -29,5 +30,6 @@ export default {
     esbuild({
       jsx: 'automatic'
     }),
+    postcss(),
   ],
 };

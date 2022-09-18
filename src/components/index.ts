@@ -1,1 +1,1 @@
-export { Button } from './Button/Button';
+export { DataGrid, DataGridProps } from './DataGrid/DataGrid';
