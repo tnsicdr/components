@@ -1,0 +1,34 @@
+{
+  "name": "@tnsicdr/components",
+  "version": "0.0.0",
+  "description": "component library",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@types/react": "^18.0.20",
+    "esbuild": "^0.15.8",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "rollup": "^2.79.0",
+    "rollup-plugin-esbuild": "^4.10.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.5.0"
+  }
+}
