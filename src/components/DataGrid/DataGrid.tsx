@@ -14,7 +14,7 @@ export const DataGrid = <T extends unknown>(props: DataGridProps<T>) => {
 
   return (
     <div className={className}>
-      <table>
+      <table data-testid='data-grid-table'>
         <thead>
           <tr>
             {columns.map((col) => (
