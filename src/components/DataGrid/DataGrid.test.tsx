@@ -27,7 +27,7 @@ const carRows = [
 describe(`<DataGrid />`, () => {
   it('should render', () => {
     render(<DataGrid columns={carCols} rows={carRows} />);
-  });
 
-  expect(screen.queryByTestId('data-grid-table')).toBeTruthy();
+    expect(screen.queryByTestId('data-grid-table')).toBeTruthy();
+  });
 });
