@@ -5,13 +5,18 @@
     "jsx": "preserve",
     "module": "ESNext",
     "moduleResolution": "node",
+    "isolatedModules": true,
     "esModuleInterop": true,
     "sourceMap": true,
     "strict": true,
+    "emitDecoratorMetadata": false,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist"
   },
   "include": ["src/**/*", "types"],
   "exclude": ["node_modules"]
